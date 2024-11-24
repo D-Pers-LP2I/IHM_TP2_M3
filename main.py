@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from interface_connexion import Ui_Form  # Importer l'IHM
 
 class ConnexionApp(QMainWindow, Ui_Form):
@@ -17,25 +17,13 @@ class ConnexionApp(QMainWindow, Ui_Form):
 
         # Vérifier si les champs sont correctement remplis
         if not identifiant or not mot_de_passe or '@' not in email:
-            self.afficher_erreur("Erreur : veuillez remplir correctement tous les champs.")
+            self.afficher_message("Erreur : veuillez remplir correctement tous les champs.")
         else:
             self.afficher_message("Connexion réussie.")
 
-    # Fonction pour afficher une boîte de dialogue d'erreur
-    def afficher_erreur(self, message):
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Critical)  # Utiliser une icône d'erreur
-        msg.setWindowTitle("Erreur")
-        msg.setText(message)
-        msg.exec_()
-
-    # Fonction pour afficher une boîte de dialogue d'information
+    # Fonction pour afficher un message dans le QLabel
     def afficher_message(self, message):
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Information)  # Utiliser une icône d'information
-        msg.setWindowTitle("Information")
-        msg.setText(message)
-        msg.exec_()
+        self.label_message.setText(message)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(400, 300)
+        Form.resize(478, 289)
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(20, 20, 111, 31))
         font = QtGui.QFont()
@@ -47,7 +47,7 @@ class Ui_Form(object):
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
         self.lineEdit_email = QtWidgets.QLineEdit(Form)
-        self.lineEdit_email.setGeometry(QtCore.QRect(150, 100, 241, 31))
+        self.lineEdit_email.setGeometry(QtCore.QRect(150, 100, 311, 31))
         font = QtGui.QFont()
         font.setPointSize(14)
         self.lineEdit_email.setFont(font)
@@ -58,6 +58,15 @@ class Ui_Form(object):
         font.setPointSize(16)
         self.bouton_valider.setFont(font)
         self.bouton_valider.setObjectName("bouton_valider")
+        self.label_message = QtWidgets.QLabel(Form)
+        self.label_message.setGeometry(QtCore.QRect(20, 200, 441, 71))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label_message.setFont(font)
+        self.label_message.setText("")
+        self.label_message.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_message.setWordWrap(True)
+        self.label_message.setObjectName("label_message")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)

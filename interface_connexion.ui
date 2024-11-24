@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>478</width>
+    <height>289</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -105,7 +105,7 @@
     <rect>
      <x>150</x>
      <y>100</y>
-     <width>241</width>
+     <width>311</width>
      <height>31</height>
     </rect>
    </property>
@@ -131,6 +131,30 @@
    </property>
    <property name="text">
     <string>Valider</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_message">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>441</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
